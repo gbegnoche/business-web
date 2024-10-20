@@ -1,0 +1,26 @@
+.tab-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab {
+  min-width: 21em;
+  text-align: left;
+  padding-top: 1em;
+  border: 1px, solid, black;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  text-decoration: underline;
+}
