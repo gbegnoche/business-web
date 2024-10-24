@@ -1,26 +1,32 @@
 .tab-container {
   display: flex;
   flex-direction: column;
+  min-width: 24em;
 }
 
+@keyframes underline {
+  from {
+    width: 0em;
+  }
+  to {
+    width: 21em;
+  }
+}
 .tab {
-  min-width: 21em;
+  background-color: transparent;
+  border: none;
   text-align: left;
   padding-top: 1em;
-  border: 1px, solid, black;
 }
-
-a:link {
-  color: white;
-  text-decoration: none;
+.underline {
+  content: "";
+  background: white;
+  height: 1px;
+  width: 0px;
 }
-a:visited {
-  color: white;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-a:active {
-  text-decoration: underline;
+.tab:hover + .underline {
+  animation-name: underline;
+  animation-direction: normal;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
