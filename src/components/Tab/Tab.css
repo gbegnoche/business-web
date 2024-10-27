@@ -1,15 +1,17 @@
-.tab-container {
-  display: flex;
-  flex-direction: column;
-  min-width: 24em;
-}
-
 @keyframes underline {
   from {
-    width: 0em;
+    width: 0%;
   }
   to {
-    width: 21em;
+    width: 100%;
+  }
+}
+@keyframes extendTab {
+  from {
+    width: 35%;
+  }
+  to {
+    width: 100%;
   }
 }
 .tab {
@@ -26,6 +28,12 @@
 }
 .tab:hover + .underline {
   animation-name: underline;
+  animation-direction: normal;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.tab:focus + .tab + .tab-container {
+  animation-name: extendTab;
   animation-direction: normal;
   animation-duration: 1s;
   animation-fill-mode: forwards;
