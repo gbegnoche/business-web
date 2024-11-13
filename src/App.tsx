@@ -9,7 +9,7 @@ function App() {
     <>
       <header>
         <h1>Garett Begnoche</h1>
-        <h3>Design and development</h3>
+        <h2>Design and development</h2>
       </header>
       <main>
         <div className="tab-container">
