@@ -1,8 +1,8 @@
 export const About = () => (
-  <div style={{ alignSelf: "flex-end" }}>
+  <p>
     Garett Begnoche is a contract software developer with experience in Node.js
     and React frontend.
-  </div>
+  </p>
 );
 
 export default About;

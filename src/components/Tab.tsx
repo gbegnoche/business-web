@@ -4,7 +4,6 @@ import {
   useNavigate,
   useResolvedPath,
 } from "react-router-dom";
-import "./Tab.css";
 import { ReactNode } from "react";
 
 export type TabProps = {

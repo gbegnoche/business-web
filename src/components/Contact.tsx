@@ -1,7 +1,7 @@
 export const Contact = () => (
-  <div>
+  <p>
     <a href="mailto: contact@garettbegnoche.com">contact@garettbegnoche.com</a>
-  </div>
+  </p>
 );
 
 export default Contact;
