@@ -4,10 +4,9 @@ import {
   useNavigate,
   useResolvedPath,
 } from "react-router-dom";
-import { ReactNode } from "react";
 
 export type TabProps = {
-  children: ReactNode;
+  children: React.ReactNode;
   to: To;
 };
 
@@ -21,7 +20,7 @@ export const Tab: React.FunctionComponent<TabProps> = ({ children, to }) => {
 
   return (
     <button
-      className="tab"
+      className={selected ? "selected-tab" : "tab"}
       role="tab"
       onClick={() => navigate(to)}
       aria-selected={selected}
