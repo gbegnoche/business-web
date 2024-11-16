@@ -1,5 +1,7 @@
 body {
   font-family: "Source Sans 3", serif;
+  color: #040f0f;
+  background-color: #fcfffc;
 }
 h1,
 h2,
@@ -7,26 +9,54 @@ h3,
 h4 {
   font-family: "Oswald", sans-serif;
 }
+
+/* Header */
+header {
+  margin-bottom: 1rem;
+}
 h1,
 h2 {
   display: inline-block;
-  min-width: 20rem;
+  margin: 1rem 8rem 0rem 0rem;
+}
+header h2 {
+  color: #1b998b;
+}
+hr {
+  margin: 0;
+}
+header div {
+  font-size: small;
+  color: #2d3a3a;
 }
 
 /* Tabs */
+div[role="tablist"] {
+}
 button {
-  min-width: 5.5rem;
-  background-color: white;
-  border: 1px solid black;
+  color: #040f0f;
+  background-color: #fcfffc;
+  width: 8rem;
+  height: 2rem;
+  border: 1px solid #040f0f;
   font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 }
 button:hover,
 button:focus,
 .selected-tab {
-  background-color: lightgreen;
+  color: #fcfffc;
+  background-color: #2d3a3a;
 }
 
 /* About page */
+.about-container {
+  width: fit-content;
+  margin: 1rem;
+  padding: 0rem 1rem;
+  background-color: #fcfffc;
+  filter: drop-shadow(grey 2px 2px 4px);
+}
 .about-container img,
 .about-container p {
   display: inline-block;
@@ -43,4 +73,8 @@ button:focus,
 /* Projects */
 .project-container {
   max-width: 20rem;
+  margin-top: 1rem;
+  padding: 0.1rem 1rem;
+  background-color: #fcfffc;
+  filter: drop-shadow(grey 0px 0px 4px);
 }

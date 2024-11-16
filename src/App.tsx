@@ -11,10 +11,12 @@ function App() {
       <header>
         <h1>Garett Begnoche</h1>
         <h2>. design and development</h2>
+        <hr />
+        <div>Freelance Software Engineer | UI design | Web Services</div>
       </header>
 
       <main>
-        <div className="tab-container">
+        <div role="tablist" className="tab-container">
           <Tab to="./about">About</Tab>
           <Tab to="./projects">Projects</Tab>
           <Tab to="./contact">Contact</Tab>
