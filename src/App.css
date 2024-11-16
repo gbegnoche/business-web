@@ -1,0 +1,46 @@
+body {
+  font-family: "Source Sans 3", serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Oswald", sans-serif;
+}
+h1,
+h2 {
+  display: inline-block;
+  min-width: 20rem;
+}
+
+/* Tabs */
+button {
+  min-width: 5.5rem;
+  background-color: white;
+  border: 1px solid black;
+  font-family: "Montserrat", sans-serif;
+}
+button:hover,
+button:focus,
+.selected-tab {
+  background-color: lightgreen;
+}
+
+/* About page */
+.about-container img,
+.about-container p {
+  display: inline-block;
+  max-width: 20rem;
+  height: auto;
+  vertical-align: middle;
+}
+.about-container img {
+  clip-path: circle();
+  max-width: 5rem;
+  margin-right: 1rem;
+}
+
+/* Projects */
+.project-container {
+  max-width: 20rem;
+}
