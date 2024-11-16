@@ -9,10 +9,14 @@ function App() {
   return (
     <>
       <header>
-        <h1>Garett Begnoche</h1>
-        <h2>. design and development</h2>
+        <span>
+          <h1>Garett Begnoche</h1>
+          <h2>. design and development</h2>
+        </span>
         <hr />
-        <div>Freelance Software Engineer | UI design | Web Services</div>
+        <span>
+          <p>Freelance Software Engineer | UI design | Web Services</p>
+        </span>
       </header>
 
       <main>
