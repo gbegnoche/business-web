@@ -1,0 +1,22 @@
+body {
+    font-family: "Source Sans 3", serif;
+}
+h1, h2, h3, h4 {
+    font-family: "Oswald", sans-serif;
+}
+h1, h2 {
+    display: inline-block;
+    margin-right: 3em;
+}
+button {
+    min-width: 5.5em;
+    background-color: white;
+    border: 1px solid black;
+    font-family: "Montserrat", sans-serif;
+}
+button:hover {
+    background-color: lightgreen;
+}
+button:focus {
+    background-color: lightgreen;
+}

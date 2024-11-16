@@ -3,14 +3,16 @@ import Tab from "./components/Tab";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
+import "./App.css";
 
 function App() {
   return (
     <>
       <header>
         <h1>Garett Begnoche</h1>
-        <h2>Design and development</h2>
+        <h2>. design and development</h2>
       </header>
+
       <main>
         <div className="tab-container">
           <Tab to="./about">About</Tab>
