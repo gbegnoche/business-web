@@ -1,6 +1,6 @@
 import { useGlobalState } from "../providers/useGlobalState";
-import IconLight from "../assets/images/theme-icon-light.svg";
-import IconDark from "../assets/images/theme-icon-dark.svg";
+import IconLight from "../assets/images/bulb-icon-light.svg";
+import IconDark from "../assets/images/bulb-icon-dark.svg";
 
 const ThemeToggle = () => {
   const { state, setState } = useGlobalState();
@@ -25,7 +25,7 @@ const ThemeToggle = () => {
           : "Change to light theme"
       }
     >
-      <img src={state.theme === "light" ? IconDark : IconLight} />
+      <img src={state.theme === "light" ? IconLight : IconDark} />
     </button>
   );
 };

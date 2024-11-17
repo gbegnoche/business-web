@@ -1,14 +1,16 @@
 [data-theme="light"] {
-  --text-color: #040f0f;
-  --background-color: #fcfffc;
-  --border-color: #040f0f;
-  --accent-color: #1b998b;
+  --text-color: #30323d;
+  --background-color: #cdd1c4;
+  --border-color: #30323d;
+  --accent-color: #5c80bc;
+  --drop-shadow-color: gray;
 }
 [data-theme="dark"] {
-  --text-color: #fcfffc;
-  --background-color: #040f0f;
-  --border-color: #fcfffc;
-  --accent-color: #1b998b;
+  --text-color: #cdd1c4;
+  --background-color: #30323d;
+  --border-color: #cdd1c4;
+  --accent-color: #e8c547;
+  --drop-shadow-color: #e8c547;
 }
 
 html,
@@ -100,7 +102,6 @@ button.tab:hover,
 .theme-toggle img {
   width: 1rem;
   height: auto;
-  color: var(--text-color);
 }
 
 /* About page */
@@ -109,7 +110,7 @@ button.tab:hover,
   margin-top: 1rem;
   padding: 0rem 1rem;
   background-color: var(--background-color);
-  box-shadow: gray 0px 0px 10px;
+  box-shadow: var(--drop-shadow-color) 0px 0px 10px;
 }
 .about-container img,
 .about-container p {
@@ -130,5 +131,5 @@ button.tab:hover,
   margin-top: 1rem;
   padding: 0.1rem 1rem;
   background-color: var(--background-color);
-  box-shadow: gray 0px 0px 10px;
+  box-shadow: var(--drop-shadow-color) 0px 0px 10px;
 }
