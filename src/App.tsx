@@ -4,6 +4,8 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import "./App.css";
+import "./App.dark.css";
+import "./properties.css";
 
 function App() {
   return (

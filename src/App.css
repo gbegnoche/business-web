@@ -1,22 +1,22 @@
 body {
   font-family: "Source Sans 3", serif;
-  color: #040f0f;
-  background-color: #fcfffc;
+  color: var(--text-color-light);
+  background-color: var(--background-color-light);
 }
 h1,
 h2,
 h3,
 h4 {
-  color: #040f0f;
+  color: var(--text-color-light);
   font-family: "Oswald", sans-serif;
 }
 hr {
   border: 0;
-  margin: 0;
+  margin: 0.3rem;
   clear: both;
   display: block;
   width: 100%;
-  background-color: #040f0f;
+  background-color: var(--border-color-light);
   height: 1px;
 }
 
@@ -24,6 +24,7 @@ hr {
 header {
   display: flex;
   flex-direction: column;
+  margin-bottom: 1rem;
   padding: 1rem 0rem;
 }
 header span {
@@ -34,11 +35,15 @@ header span {
 
 header h1,
 header h2 {
-  margin-bottom: 0;
   align-self: flex-end;
+  margin-bottom: 0;
+}
+header h1 {
+  font-size: 3rem;
 }
 header h2 {
-  color: #1b998b;
+  color: var(--accent-color-light);
+  font-weight: lighter;
 }
 
 header span p {
@@ -48,21 +53,18 @@ header span p {
 }
 
 /* Tabs */
-div[role="tablist"] {
-}
 button {
-  color: #040f0f;
-  background-color: #fcfffc;
+  color: var(--text-color-light);
+  background-color: var(--background-color-light);
   height: 2rem;
-  border: 1px solid #040f0f;
+  border: none;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
 }
 button:hover,
 button:focus,
 .selected-tab {
-  color: #fcfffc;
-  background-color: #2d3a3a;
+  border-bottom: 1px solid var(--border-color-light);
 }
 
 /* About page */
@@ -70,7 +72,7 @@ button:focus,
   width: fit-content;
   margin: 1rem;
   padding: 0rem 1rem;
-  background-color: #fcfffc;
+  background-color: var(--background-color-light);
   filter: drop-shadow(grey 2px 2px 4px);
 }
 .about-container img,
@@ -91,6 +93,6 @@ button:focus,
   max-width: 20rem;
   margin-top: 1rem;
   padding: 0.1rem 1rem;
-  background-color: #fcfffc;
+  background-color: var(--background-color-light);
   filter: drop-shadow(grey 0px 0px 4px);
 }
