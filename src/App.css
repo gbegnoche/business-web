@@ -1,13 +1,37 @@
-body {
+[data-theme="light"] {
+  --text-color: #040f0f;
+  --background-color: #fcfffc;
+  --border-color: #040f0f;
+  --accent-color: #1b998b;
+}
+[data-theme="dark"] {
+  --text-color: #fcfffc;
+  --background-color: #040f0f;
+  --border-color: #fcfffc;
+  --accent-color: #1b998b;
+}
+
+html,
+body,
+#root,
+.app-container {
+  height: 100%;
+  margin: 0;
+}
+:root {
+  margin: 0;
   font-family: "Source Sans 3", serif;
-  color: var(--text-color-light);
-  background-color: var(--background-color-light);
+}
+.app-container {
+  padding: 1rem;
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 h1,
 h2,
 h3,
 h4 {
-  color: var(--text-color-light);
+  color: var(--text-color);
   font-family: "Oswald", sans-serif;
 }
 hr {
@@ -16,7 +40,7 @@ hr {
   clear: both;
   display: block;
   width: 100%;
-  background-color: var(--border-color-light);
+  background-color: var(--border-color);
   height: 1px;
 }
 
@@ -42,38 +66,50 @@ header h1 {
   font-size: 3rem;
 }
 header h2 {
-  color: var(--accent-color-light);
+  color: var(--accent-color);
   font-weight: lighter;
 }
 
 header span p {
   margin: 0;
   font-size: small;
-  color: #2d3a3a;
 }
 
 /* Tabs */
 button {
-  color: var(--text-color-light);
-  background-color: var(--background-color-light);
-  height: 2rem;
+  color: var(--text-color);
+  background-color: var(--background-color);
   border: none;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
 }
-button:hover,
-button:focus,
+button.tab {
+  height: 2rem;
+}
+button.tab:hover,
 .selected-tab {
-  border-bottom: 1px solid var(--border-color-light);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  height: 2rem;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.theme-toggle img {
+  width: 1rem;
+  height: auto;
+  color: var(--text-color);
 }
 
 /* About page */
 .about-container {
   width: fit-content;
-  margin: 1rem;
+  margin-top: 1rem;
   padding: 0rem 1rem;
-  background-color: var(--background-color-light);
-  filter: drop-shadow(grey 2px 2px 4px);
+  background-color: var(--background-color);
+  box-shadow: gray 0px 0px 10px;
 }
 .about-container img,
 .about-container p {
@@ -93,6 +129,6 @@ button:focus,
   max-width: 20rem;
   margin-top: 1rem;
   padding: 0.1rem 1rem;
-  background-color: var(--background-color-light);
-  filter: drop-shadow(grey 0px 0px 4px);
+  background-color: var(--background-color);
+  box-shadow: gray 0px 0px 10px;
 }
