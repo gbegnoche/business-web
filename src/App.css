@@ -73,7 +73,7 @@ header span {
 header h1,
 header h2 {
   align-self: flex-end;
-  margin-bottom: 0;
+  margin: 0px;
 }
 header h1 {
   font-size: 3rem;
@@ -118,16 +118,14 @@ button.tab:hover,
 
 /* About page */
 .about-container {
-  width: fit-content;
+  display: flex;
+  flex-direction: row;
   background-color: var(--background-color);
   box-shadow: var(--drop-shadow-color) 0px 0px 10px;
 }
 .about-container img,
 .about-container p {
-  display: inline-block;
-  max-width: 20rem;
-  height: auto;
-  vertical-align: middle;
+  margin: 0.5rem 1rem;
 }
 .about-container img {
   clip-path: circle();
@@ -136,7 +134,16 @@ button.tab:hover,
 
 /* Projects */
 .project-container {
+  margin: 1rem 0rem;
   padding: 1rem;
   background-color: var(--background-color);
   box-shadow: var(--drop-shadow-color) 0px 0px 10px;
+}
+.project-container span {
+  display: flex;
+  flex-direction: row;
+}
+.project-container img {
+  clip-path: circle();
+  max-width: 4em;
 }
