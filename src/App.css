@@ -46,6 +46,9 @@ h4 {
   color: var(--text-color);
   font-family: "Oswald", sans-serif;
 }
+h3 {
+  font-size: 2em;
+}
 hr {
   border: 0;
   clear: both;
@@ -76,7 +79,7 @@ header h2 {
   margin: 0px;
 }
 header h1 {
-  font-size: 3rem;
+  font-size: 3em;
 }
 header h2 {
   color: var(--accent-color);
@@ -100,6 +103,7 @@ button {
   border: none;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
+  font-size: 1em;
 }
 button.tab:hover,
 .selected-tab {
@@ -117,18 +121,25 @@ button.tab:hover,
 }
 
 /* About */
-.about-container span {
-}
-.about-container img {
-  clip-path: circle();
-  max-width: 5rem;
+.about-container u {
+  font-size: large;
+  text-decoration: none;
 }
 
 /* Projects */
 .project-container span {
   display: flex;
 }
+.project-container h3,
+.project-container h4 {
+  margin: 0;
+}
+.project-container h4 {
+  font-weight: lighter;
+}
 .project-container img {
-  clip-path: circle();
-  max-width: 4em;
+  margin-right: 1rem;
+  clip-path: circle(farthest-side);
+  width: 5em;
+  height: fit-content;
 }
