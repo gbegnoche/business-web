@@ -20,7 +20,7 @@
 html,
 body,
 #root,
-.app-container {
+#app-container {
   overflow: scroll;
   height: 100%;
   margin: 0;
@@ -32,70 +32,46 @@ body,
   --glaucous: #5c80bcff;
   --ash-gray: #cdd1c4ff;
 
-  margin: 0;
   font-family: "Source Sans 3", serif;
 }
-.app-container {
+#app-container {
   color: var(--text-color);
   background-color: var(--background-color);
+}
+header,
+main {
+  padding: 1rem;
 }
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
+  width: fit-content;
+  margin: 0;
   color: var(--text-color);
   font-family: "Oswald", sans-serif;
 }
-h3 {
-  font-size: 2em;
+h1 {
+  font-size: 3em;
 }
-hr {
-  border: 0;
-  clear: both;
-  display: block;
-  width: 100%;
-  background-color: var(--border-color);
-  height: 1px;
+h2 {
+  align-self: flex-end;
+  color: var(--accent-color);
+  font-size: 2em;
+  font-weight: lighter;
 }
 a {
   color: var(--link-color);
 }
-
-/* Header */
-header {
-  display: flex;
-  flex-direction: column;
-  margin: 1rem;
+u {
+  font-size: large;
+  text-decoration: none;
 }
-header span {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-header h1,
-header h2 {
-  align-self: flex-end;
-  margin: 0px;
-}
-header h1 {
-  font-size: 3em;
-}
-header h2 {
-  color: var(--accent-color);
-  font-weight: lighter;
-}
-
-header span p {
+hr {
+  border-color: var(--border-color);
   margin: 0;
-  font-size: small;
-}
-
-/* Tabs */
-.tab-container {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 4rem;
 }
 button {
   color: var(--text-color);
@@ -105,58 +81,60 @@ button {
   font-weight: bold;
   font-size: 1em;
 }
-button.tab:hover,
-.selected-tab {
-  color: var(--selected-tab-color);
-  border-bottom: 1px solid var(--selected-tab-color);
-}
-
-.theme-toggle img {
-  width: 1rem;
-  height: auto;
-}
-
-.content {
-  margin: 1rem;
-}
-
-/* About */
-.about-container u {
-  font-size: large;
-  text-decoration: none;
-}
-
-/* Projects */
-.project-container {
-  margin-bottom: 2rem;
-}
-.project-container span {
+span {
   display: flex;
 }
-.project-container h3,
-.project-container h4 {
-  margin: 0;
+header span {
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.project-container h4 {
+
+.body-heading {
+  font-size: 2em;
+}
+.subtitle {
+  font-size: 1em;
   font-weight: lighter;
 }
-.project-container img {
+.logo {
   object-fit: cover;
   margin-right: 1rem;
   clip-path: circle(farthest-side);
   width: 5em;
   height: fit-content;
 }
-.chip-container {
-  display: flex;
-  flex-wrap: wrap;
-}
 .chip {
   padding: 3px 10px;
-  margin: 0.5rem;
+  margin: 0.2rem;
   background-color: var(--accent-color);
-  color: var(--jet);
+  color: var(--background-color);
   border-radius: 14px;
   font-weight: bold;
   font-size: small;
+}
+.no-margin {
+  margin: 0;
+}
+.chips-container {
+  flex-wrap: wrap;
+}
+.project-container {
+  margin-bottom: 4rem;
+}
+
+[role="tablist"] {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+[role="tab"]:hover,
+.selected-tab {
+  color: var(--selected-tab-color);
+  border-bottom: 1px solid var(--selected-tab-color);
+}
+
+#theme-toggle img {
+  width: 1rem;
+  height: auto;
 }

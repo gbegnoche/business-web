@@ -19,7 +19,7 @@ export const Projects = () => {
       subtitle: "2024 - present",
       description:
         "Rebuilding legacy application from the ground up to modernize company infrastructure. Working with sites globally to coordinate app deployment.",
-      chips: ["HTML", "CSS", "Blazor", "C#", "SQL"],
+      chips: ["HTML", "CSS", "Blazor", "C#", "SQL", "Systems Integration"],
     },
     {
       logo: techngs,
@@ -35,15 +35,7 @@ export const Projects = () => {
       subtitle: "2018 - 2021",
       description:
         "Worked with multiple clients to determine business needs and deliver software solutions. Projects included transitioning customers from legacy software, research and development on a hardware solution for tracking manufacturing processes, and even a company-sponsored game jam.",
-      chips: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "React",
-        "Node",
-        "Jest",
-        "Test-driven development",
-      ],
+      chips: ["HTML", "CSS", "JavaScript", "React", "Node", "Jest"],
     },
   ];
 
@@ -55,17 +47,22 @@ export const Projects = () => {
     content,
     chips,
   }: Project) => (
-    <div key={title} className="project-container">
+    <div className="project-container" key={title}>
       <span>
-        {logo && <img src={logo} />}
+        {logo && <img className="logo" src={logo} />}
         <div>
-          <h3>{title}</h3>
-          <h4>{subtitle}</h4>
+          <h5 className="body-heading">{title}</h5>
+          <h6 className="subtitle">{subtitle}</h6>
           {content}
           <p>{description}</p>
-          <div className="chip-container">
-            {chips && chips.map((text) => <div className="chip">{text}</div>)}
-          </div>
+          <span className="chips-container">
+            {chips &&
+              chips.map((text) => (
+                <div key={text} className="chip">
+                  {text}
+                </div>
+              ))}
+          </span>
         </div>
       </span>
     </div>

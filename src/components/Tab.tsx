@@ -20,7 +20,7 @@ export const Tab: React.FunctionComponent<TabProps> = ({ children, to }) => {
 
   return (
     <button
-      className={selected ? "selected-tab" : "tab"}
+      className={selected ? "selected-tab" : ""}
       role="tab"
       onClick={() => navigate(to)}
       aria-selected={selected}

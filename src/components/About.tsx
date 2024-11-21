@@ -1,7 +1,7 @@
 export const About = () => (
-  <div className="about-container">
-    <h3>About me</h3>
-    <span>
+  <div>
+    <h3 className="body-heading">About me</h3>
+    <div>
       <p>
         <u>Hi! I'm Garett</u>. I'm a <b>Software Engineer</b> based in{" "}
         <b>Brooklyn, NY</b>.
@@ -25,7 +25,7 @@ export const About = () => (
         I also compose music, develop video games, write comedy sketches, and
         hang out with my cat.
       </p>
-    </span>
+    </div>
   </div>
 );
 

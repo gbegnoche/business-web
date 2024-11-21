@@ -11,26 +11,26 @@ function App() {
   const { state } = useGlobalState();
 
   return (
-    <div className="app-container" data-theme={state.theme}>
+    <div id="app-container" data-theme={state.theme}>
       <header>
         <span>
           <h1>Garett Begnoche</h1>
           <h2>design + development</h2>
         </span>
         <hr />
-        <span>
-          <p>Freelance Software Engineer | UI design | Web Services</p>
-        </span>
+        <h3 className="subtitle">
+          Freelance Software Engineer | UI design | Web Services
+        </h3>
       </header>
 
       <main>
-        <div role="tablist" className="tab-container">
+        <div role="tablist">
           <Tab to="./about">About</Tab>
           <Tab to="./projects">Projects</Tab>
           <Tab to="./contact">Contact</Tab>
           <ThemeToggle />
         </div>
-        <div className="content">
+        <div>
           <Routes>
             <Route path={"/about"} element={<About />} />
             <Route path={"/projects"} element={<Projects />} />
