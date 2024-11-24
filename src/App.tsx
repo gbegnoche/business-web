@@ -1,9 +1,8 @@
 import { Route, Routes } from "react-router-dom";
-import Tab from "./components/Tab";
+import Tabs from "./components/Tabs";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
-import ThemeToggle from "./components/ThemeToggle";
 import { useGlobalState } from "./providers/useGlobalState";
 import "./App.css";
 
@@ -24,13 +23,8 @@ function App() {
       </header>
 
       <main>
-        <div role="tablist">
-          <Tab to="./about">About</Tab>
-          <Tab to="./projects">Projects</Tab>
-          <Tab to="./contact">Contact</Tab>
-          <ThemeToggle />
-        </div>
         <div>
+          <Tabs />
           <Routes>
             <Route path={"/about"} element={<About />} />
             <Route path={"/projects"} element={<Projects />} />

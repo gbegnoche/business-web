@@ -16,6 +16,12 @@
   --link-color: var(--glaucous);
   --selected-tab-color: var(--saffron);
 }
+@media (min-width: 50em) {
+  #work-container {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
 
 html,
 body,
@@ -40,7 +46,7 @@ body,
 }
 header,
 main {
-  padding: 1rem;
+  padding: 3rem;
 }
 h1,
 h2,
@@ -79,7 +85,7 @@ button {
   border: none;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1.3em;
 }
 span {
   display: flex;
@@ -118,15 +124,14 @@ header span {
 .chips-container {
   flex-wrap: wrap;
 }
-.project-container {
+.work-container {
   margin-bottom: 4rem;
 }
 
 [role="tablist"] {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 [role="tab"]:hover,
 .selected-tab {
@@ -135,6 +140,11 @@ header span {
 }
 
 #theme-toggle img {
-  width: 1rem;
+  width: 1.3rem;
   height: auto;
+}
+
+#work-container {
+  display: grid;
+  gap: 1em;
 }
