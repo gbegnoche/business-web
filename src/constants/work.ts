@@ -11,7 +11,16 @@ export const work: Work[] = [
     subtitle: "2024 - present",
     description:
       "Rebuilding legacy application from the ground up to modernize company infrastructure. Working with sites globally to coordinate app deployment.",
-    chips: ["HTML", "CSS", "Blazor", "C#", "SQL", "Systems Integration"],
+    chips: [
+      "HTML",
+      "CSS",
+      "Blazor",
+      "C#",
+      "SQL",
+      "Azure",
+      "Visual Studio",
+      "Systems Integration",
+    ],
   },
   {
     logo: techngs,
@@ -19,7 +28,17 @@ export const work: Work[] = [
     subtitle: "2022 - 2024",
     description:
       "Led a team of software engineers building an application for the US Air Force. Determined the way forward for team members to ensure application was delivered on time and met quality standards as well as business needs.",
-    chips: ["HTML", "CSS", "React", "Node", "Jest", "GraphQL", "Docker"],
+    chips: [
+      "HTML",
+      "CSS",
+      "React",
+      "Node",
+      "Jest",
+      "GraphQL",
+      "Docker",
+      "Figma",
+      "Lucid",
+    ],
   },
   {
     logo: covey,

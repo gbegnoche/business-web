@@ -33,6 +33,13 @@ function App() {
           </Routes>
         </div>
       </main>
+
+      <footer>
+        <p>
+          Website designed and built by me in <b>Visual Studio Code</b> using{" "}
+          <b>React Typescript</b>.
+        </p>
+      </footer>
     </div>
   );
 }
