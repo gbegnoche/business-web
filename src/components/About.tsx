@@ -1,6 +1,6 @@
 export const About = () => (
   <div>
-    <h3 className="body-heading">About me</h3>
+    <h4 className="body-heading">About me</h4>
     <div>
       <p>
         <u>Hi! I'm Garett</u>. I'm a <b>Software Engineer</b> based in{" "}

@@ -17,7 +17,7 @@
   --selected-tab-color: var(--saffron);
 }
 @media (min-width: 50em) {
-  #work-container {
+  #company-container {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
   }
@@ -76,11 +76,12 @@ footer b {
 }
 
 #theme-toggle img {
-  width: 1.3rem;
+  width: 1.2rem;
   height: auto;
 }
 
-#work-container {
+#company-container {
+  margin-top: 2rem;
   display: grid;
   gap: 1em;
 }
@@ -104,6 +105,10 @@ h2 {
   color: var(--accent-color);
   font-size: 2em;
   font-weight: lighter;
+}
+h4 {
+  font-size: 2rem;
+  font-weight: normal;
 }
 a {
   color: var(--link-color);
@@ -161,6 +166,6 @@ header span {
 .chips-container {
   flex-wrap: wrap;
 }
-.work-container {
-  margin-bottom: 4rem;
+.job-container {
+  max-width: 80%;
 }

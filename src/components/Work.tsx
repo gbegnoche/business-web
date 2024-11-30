@@ -17,7 +17,7 @@ const generateWork = ({
   content,
   chips,
 }: Work) => (
-  <div className="work-container" key={title}>
+  <div className="job-container" key={title}>
     <span>
       {logo && <img className="logo" src={logo} />}
       <div>
@@ -39,5 +39,8 @@ const generateWork = ({
 );
 
 export const Work = () => (
-  <div id="work-container">{work.map((job) => generateWork(job))}</div>
+  <div id="work-container">
+    <h4>Work</h4>
+    <div id="company-container">{work.map((job) => generateWork(job))}</div>
+  </div>
 );
