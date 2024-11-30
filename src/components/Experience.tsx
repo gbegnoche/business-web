@@ -1,10 +1,17 @@
-import { Work } from "../components/Work";
-
 import indium from "../assets/images/indium-icon.jpeg";
 import techngs from "../assets/images/techngs-icon.jpeg";
 import covey from "../assets/images/covey-icon.jpeg";
 
-export const work: Work[] = [
+export type JobData = {
+  title: string;
+  subtitle: string;
+  description: string;
+  logo?: string;
+  content?: React.ReactNode;
+  chips?: string[];
+};
+
+const jobs: JobData[] = [
   {
     logo: indium,
     title: "Indium Corporation of America",
@@ -49,3 +56,41 @@ export const work: Work[] = [
     chips: ["HTML", "CSS", "JavaScript", "React", "Node", "Jest"],
   },
 ];
+
+const generateJobContainer = ({
+  title,
+  subtitle,
+  description,
+  logo,
+  content,
+  chips,
+}: JobData) => (
+  <div className="job-container" key={title}>
+    <span>
+      {logo && <img className="logo" src={logo} />}
+      <div>
+        <h5 className="body-heading">{title}</h5>
+        <h6 className="subtitle">{subtitle}</h6>
+        {content}
+        <p>{description}</p>
+        <span className="chips-container">
+          {chips &&
+            chips.map((text) => (
+              <div key={text} className="chip">
+                {text}
+              </div>
+            ))}
+        </span>
+      </div>
+    </span>
+  </div>
+);
+
+export const Experience = () => (
+  <div id="experience-container">
+    <h4>Work</h4>
+    {jobs.map((job) => generateJobContainer(job))}
+  </div>
+);
+
+export default Experience;

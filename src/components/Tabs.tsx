@@ -34,7 +34,8 @@ export const Tabs = () => {
   return (
     <div role="tablist">
       <Tab to="./about">About</Tab>
-      <Tab to="./projects">Projects</Tab>
+      <Tab to="./experience">Experience</Tab>
+      {/* <Tab to="./gamejams">Game Jams</Tab> */}
       <Tab to="./contact">Contact</Tab>
     </div>
   );

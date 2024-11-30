@@ -62,7 +62,6 @@ footer b {
   flex-grow: 1;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-bottom: 4rem;
 }
 [role="tab"]:hover,
 .selected-tab {
@@ -156,4 +155,7 @@ header span {
 }
 .chips-container {
   flex-wrap: wrap;
+}
+.job-container {
+  margin: 2rem 0;
 }
