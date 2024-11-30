@@ -16,12 +16,6 @@
   --link-color: var(--glaucous);
   --selected-tab-color: var(--saffron);
 }
-@media (min-width: 50em) {
-  #company-container {
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-  }
-}
 
 html,
 body,
@@ -65,6 +59,7 @@ footer b {
 
 [role="tablist"] {
   display: flex;
+  flex-grow: 1;
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-bottom: 4rem;
@@ -75,15 +70,12 @@ footer b {
   border-bottom: 1px solid var(--selected-tab-color);
 }
 
+#theme-toggle {
+  height: min-content;
+}
 #theme-toggle img {
   width: 1.2rem;
   height: auto;
-}
-
-#company-container {
-  margin-top: 2rem;
-  display: grid;
-  gap: 1em;
 }
 
 h1,
@@ -119,7 +111,6 @@ u {
 }
 hr {
   border-color: var(--border-color);
-  margin: 0;
 }
 button {
   color: var(--text-color);
@@ -165,7 +156,4 @@ header span {
 }
 .chips-container {
   flex-wrap: wrap;
-}
-.job-container {
-  max-width: 80%;
 }

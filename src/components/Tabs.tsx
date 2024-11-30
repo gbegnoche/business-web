@@ -4,7 +4,6 @@ import {
   useNavigate,
   useResolvedPath,
 } from "react-router-dom";
-import ThemeToggle from "./ThemeToggle";
 
 export type TabProps = {
   children: React.ReactNode;
@@ -37,7 +36,6 @@ export const Tabs = () => {
       <Tab to="./about">About</Tab>
       <Tab to="./projects">Projects</Tab>
       <Tab to="./contact">Contact</Tab>
-      <ThemeToggle />
     </div>
   );
 };
