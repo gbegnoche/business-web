@@ -2,9 +2,11 @@ import { Route, Routes } from "react-router-dom";
 import Tabs from "./components/Tabs";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Projects from "./components/Projects";
+import Experience from "./components/Experience";
 import { useGlobalState } from "./providers/useGlobalState";
 import "./App.css";
+import ThemeToggle from "./components/ThemeToggle";
+import { GameJams } from "./components/GameJams";
 
 function App() {
   const { state } = useGlobalState();
@@ -17,19 +19,23 @@ function App() {
           <h2>design + development</h2>
         </span>
         <hr />
-        <h3 className="subtitle">
-          Freelance Software Engineer | UI design | Web Services
-        </h3>
+        <span>
+          <h3 className="subtitle">
+            Freelance Software Engineer | UI design | Web Services
+          </h3>
+          <Tabs />
+          <ThemeToggle />
+        </span>
       </header>
 
       <main>
         <div>
-          <Tabs />
           <Routes>
-            <Route path={"/"} element={<div />} />
-            <Route path={"/about"} element={<About />} />
-            <Route path={"/projects"} element={<Projects />} />
-            <Route path={"/contact"} element={<Contact />} />
+            <Route path="/" element={<div />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/gamejams" element={<GameJams />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
       </main>
