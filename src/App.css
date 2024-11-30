@@ -52,6 +52,7 @@ footer {
   font-size: small;
   font-weight: lighter;
   align-self: flex-end;
+  text-align: right;
 }
 footer b {
   font-weight: normal;
@@ -63,10 +64,21 @@ footer b {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-[role="tab"]:hover,
+button,
+.tab,
+.tab * {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  text-decoration: none;
+}
+.tab:hover,
 .selected-tab {
   color: var(--selected-tab-color);
-  border-bottom: 1px solid var(--selected-tab-color);
+  text-decoration: underline;
 }
 
 #theme-toggle {
@@ -110,14 +122,6 @@ u {
 }
 hr {
   border-color: var(--border-color);
-}
-button {
-  color: var(--text-color);
-  background-color: var(--background-color);
-  border: none;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 1em;
 }
 span {
   display: flex;
