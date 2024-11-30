@@ -56,7 +56,11 @@ main {
 }
 footer {
   font-size: small;
+  font-weight: lighter;
   align-self: flex-end;
+}
+footer b {
+  font-weight: normal;
 }
 
 [role="tablist"] {
