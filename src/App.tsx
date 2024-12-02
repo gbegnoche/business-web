@@ -1,11 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 import Tabs from "./components/Tabs";
 import About from "./components/About";
-import Contact from "./components/Contact";
-import Experience from "./components/Experience";
 import { useGlobalState } from "./providers/useGlobalState";
-import "./App.css";
 import ThemeToggle from "./components/ThemeToggle";
+import "./App.css";
 import { GameJams } from "./components/GameJams";
 
 function App() {
@@ -33,9 +31,15 @@ function App() {
           <Routes>
             <Route path="/" element={<div />} />
             <Route path="/about" element={<About />} />
-            <Route path="/experience" element={<Experience />} />
-            <Route path="/gamejams" element={<GameJams />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/projects" element={<GameJams />} />
+            <Route
+              path="/contact"
+              element={
+                <a href="mailto: contact@garettbegnoche.com">
+                  contact@garettbegnoche.com
+                </a>
+              }
+            />
           </Routes>
         </div>
       </main>

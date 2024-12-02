@@ -43,7 +43,7 @@ body,
 header,
 main,
 footer {
-  padding: 1rem;
+  padding: 4rem;
 }
 main {
   flex: 1;
@@ -81,8 +81,15 @@ button,
   text-decoration: underline;
 }
 
-#theme-toggle {
-  height: min-content;
+#about-container {
+  justify-content: space-between;
+}
+#bio-container,
+#experience-container {
+  max-width: 28rem;
+}
+#experience-container * {
+  align-self: flex-end;
 }
 #theme-toggle img {
   width: 1.2rem;
@@ -110,8 +117,11 @@ h2 {
   font-weight: lighter;
 }
 h4 {
-  font-size: 2rem;
+  font-size: 2em;
   font-weight: normal;
+}
+h5 {
+  font-size: 1.8em;
 }
 a {
   color: var(--link-color);
@@ -125,10 +135,10 @@ hr {
 }
 span {
   display: flex;
+  flex-wrap: wrap;
 }
 header span {
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .body-heading {
@@ -157,8 +167,8 @@ header span {
 .no-margin {
   margin: 0;
 }
-.chips-container {
-  flex-wrap: wrap;
+.no-wrap {
+  flex-wrap: nowrap;
 }
 .job-container {
   margin: 2rem 0;
