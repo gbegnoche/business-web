@@ -17,6 +17,13 @@
   --selected-tab-color: var(--saffron);
 }
 
+@media only screen and (max-width: 768px) {
+  #app-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 html,
 body,
 #root,
@@ -31,22 +38,24 @@ body,
   --davys-gray: #4d5061ff;
   --glaucous: #5c80bcff;
   --ash-gray: #cdd1c4ff;
-
   font-family: "Source Sans 3", serif;
 }
 #app-container {
   display: flex;
-  flex-direction: column;
+  overflow: hidden;
   color: var(--text-color);
   background-color: var(--background-color);
 }
+#theme-toggle img {
+  width: 1.2rem;
+  height: auto;
+  margin-left: 1.4rem;
+}
+
 header,
 main,
 footer {
-  padding: 4rem;
-}
-main {
-  flex: 1;
+  padding: 2rem;
 }
 footer {
   font-size: small;
@@ -57,45 +66,6 @@ footer {
 footer b {
   font-weight: normal;
 }
-
-[role="tablist"] {
-  display: flex;
-  flex-grow: 1;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-button,
-.tab,
-.tab * {
-  color: var(--text-color);
-  background-color: var(--background-color);
-  border: none;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 1em;
-  text-decoration: none;
-}
-.tab:hover,
-.selected-tab {
-  color: var(--selected-tab-color);
-  text-decoration: underline;
-}
-
-#about-container {
-  justify-content: space-between;
-}
-#bio-container,
-#experience-container {
-  max-width: 28rem;
-}
-#experience-container * {
-  align-self: flex-end;
-}
-#theme-toggle img {
-  width: 1.2rem;
-  height: auto;
-}
-
 h1,
 h2,
 h3,
@@ -109,6 +79,7 @@ h6 {
 }
 h1 {
   font-size: 3em;
+  white-space: nowrap;
 }
 h2 {
   align-self: flex-end;
@@ -137,10 +108,34 @@ span {
   display: flex;
   flex-wrap: wrap;
 }
-header span {
-  justify-content: space-between;
+button {
+  padding: 0;
+  background-color: var(--background-color);
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+[role="tablist"] {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
+.tab {
+  margin-top: 2rem;
+}
+.tab,
+.tab * {
+  color: var(--text-color);
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+.tab:hover,
+.selected-tab {
+  margin-top: 2rem;
+  color: var(--selected-tab-color);
+  text-decoration: underline;
+}
 .body-heading {
   font-size: 2em;
 }

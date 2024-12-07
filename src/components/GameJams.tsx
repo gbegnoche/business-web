@@ -16,3 +16,5 @@ export const GameJams = () => {
     </div>
   );
 };
+
+export default GameJams;

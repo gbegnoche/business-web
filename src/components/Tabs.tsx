@@ -42,7 +42,8 @@ export const Tabs = () => {
   return (
     <div role="tablist">
       <Tab to="./about">About</Tab>
-      <Tab to="./projects">Projects</Tab>
+      <Tab to="./experience">Experience</Tab>
+      {/* <Tab to="./projects">Projects</Tab> */}
       <Tab>
         <a href="mailto: contact@garettbegnoche.com">Contact</a>
       </Tab>
