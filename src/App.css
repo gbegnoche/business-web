@@ -42,7 +42,6 @@ body,
 }
 #app-container {
   display: flex;
-  overflow: hidden;
   color: var(--text-color);
   background-color: var(--background-color);
 }
