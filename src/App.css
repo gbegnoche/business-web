@@ -24,6 +24,23 @@
   }
 }
 
+:root {
+  /* Font sizes */
+  --font-size-small: 0.8rem;
+  --font-size-medium: 1rem;
+  --font-size-large: 1.8rem;
+  --font-size-xlarge: 2rem;
+  --font-size-header: 2.9rem;
+  /* Colors */
+  --saffron: #e8c547ff;
+  --jet: #30323dff;
+  --davys-gray: #4d5061ff;
+  --glaucous: #5c80bcff;
+  --ash-gray: #cdd1c4ff;
+  /* Font */
+  font-family: "Source Sans 3", serif;
+  font-size: var(--font-size-medium);
+}
 html,
 body,
 #root,
@@ -31,14 +48,6 @@ body,
   overflow: scroll;
   height: 100%;
   margin: 0;
-}
-:root {
-  --saffron: #e8c547ff;
-  --jet: #30323dff;
-  --davys-gray: #4d5061ff;
-  --glaucous: #5c80bcff;
-  --ash-gray: #cdd1c4ff;
-  font-family: "Source Sans 3", serif;
 }
 #app-container {
   display: flex;
@@ -48,7 +57,7 @@ body,
 #theme-toggle img {
   width: 1.2rem;
   height: auto;
-  margin-left: 1.4rem;
+  margin: 0 0.3rem;
 }
 
 header,
@@ -77,21 +86,27 @@ h6 {
   font-family: "Oswald", sans-serif;
 }
 h1 {
-  font-size: 3em;
+  font-size: var(--font-size-header);
   white-space: nowrap;
 }
 h2 {
-  align-self: flex-end;
+  font-size: var(--font-size-xlarge);
+  font-weight: lighter;
   color: var(--accent-color);
-  font-size: 2em;
+}
+h3 {
+  font-size: var(--font-size-medium);
   font-weight: lighter;
 }
 h4 {
-  font-size: 2em;
+  font-size: var(--font-size-large);
   font-weight: normal;
 }
 h5 {
-  font-size: 1.8em;
+  font-size: var(--font-size-large);
+}
+h6 {
+  font-size: var(--font-size-medium);
 }
 a {
   color: var(--link-color);
@@ -112,7 +127,7 @@ button {
   background-color: var(--background-color);
   border: none;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: var(--font-size-medium);
 }
 [role="tablist"] {
   display: flex;
@@ -135,11 +150,8 @@ button {
   color: var(--selected-tab-color);
   text-decoration: underline;
 }
-.body-heading {
-  font-size: 2em;
-}
 .subtitle {
-  font-size: 1em;
+  font-size: var(--font-size-small);
   font-weight: lighter;
 }
 .logo {
@@ -156,10 +168,7 @@ button {
   color: var(--background-color);
   border-radius: 14px;
   font-weight: bold;
-  font-size: small;
-}
-.no-margin {
-  margin: 0;
+  font-size: var(--font-size-small);
 }
 .no-wrap {
   flex-wrap: nowrap;

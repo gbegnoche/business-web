@@ -1,3 +1,7 @@
+import IndiumLogo from "../assets/images/indium-icon.jpeg";
+import TechngsLogo from "../assets/images/techngs-icon.jpeg";
+import CoveyLogo from "../assets/images/covey-icon.jpeg";
+
 export type JobData = {
   title: string;
   subtitle: string;
@@ -12,6 +16,7 @@ const jobs: JobData[] = [
     subtitle: "2024 - present",
     description:
       "Rebuilding legacy application from the ground up to modernize company infrastructure. Working with sites globally to coordinate app deployment.",
+    logo: IndiumLogo,
     chips: [
       "HTML",
       "CSS",
@@ -28,6 +33,7 @@ const jobs: JobData[] = [
     subtitle: "2022 - 2024",
     description:
       "Led a team of software engineers building an application for the US Air Force. Determined the way forward for team members to ensure application was delivered on time and met quality standards as well as business needs.",
+    logo: TechngsLogo,
     chips: [
       "HTML",
       "CSS",
@@ -45,6 +51,7 @@ const jobs: JobData[] = [
     subtitle: "2018 - 2021",
     description:
       "Worked with multiple clients to determine business needs and deliver software solutions. Projects included transitioning customers from legacy software, research and development on a hardware solution for tracking manufacturing processes, and even a company-sponsored game jam.",
+    logo: CoveyLogo,
     chips: ["HTML", "CSS", "JavaScript", "React", "Node", "Jest"],
   },
 ];
